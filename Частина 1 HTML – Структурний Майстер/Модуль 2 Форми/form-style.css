@@ -35,3 +35,16 @@ button:hover {
   color: green;
   cursor: pointer;
 }
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: cornflowerblue;
+  box-shadow: 0 0 5px rgba(100, 149, 237, 0.5);
+  outline: none;
+}
+textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
