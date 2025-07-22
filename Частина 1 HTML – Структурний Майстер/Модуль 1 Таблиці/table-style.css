@@ -16,5 +16,4 @@ th {
 }
 th::before {
   content: "📌 ";
-  color: cornflowerblue;
 }
