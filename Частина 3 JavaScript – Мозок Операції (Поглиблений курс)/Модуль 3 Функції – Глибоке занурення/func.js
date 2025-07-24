@@ -43,6 +43,9 @@ const universalCalc = (a, b, operation) => {
     case "*":
       return a * b;
     case "/":
+      if (b === 0) {
+        return "Ділення на нуль неможливе";
+      }
       return a / b;
     default:
       return "Невідома операція";
