@@ -22,3 +22,21 @@ const isEven = function (number) {
 };
 console.log(isEven(5));
 console.log(isEven(8));
+
+/*
+Привітання користувача:
+Напиши функцію greetUser за допомогою Arrow Function.
+Вона має приймати один параметр name.
+Вона має повертати рядок привітання, наприклад: "Вітаю, Сергій!". (Використай шаблонні літерали `).
+Виклич її, передавши своє ім'я, і виведи результат.
+*/
+const greetUser = (name) => `Вітаю, ${name}!`;
+console.log(greetUser("Сергій"));
+
+/*
+Стрілкова функція "в один рядок":
+Перепиши функцію для розрахунку площі прямокутника, назвавши її calculateAreaShort, але цього разу використай короткий синтаксис стрілкової функції (без {} і return).
+Перевір її роботу так само, як і першу.
+*/
+const calculateAreaShort = (width, height) => width * height;
+console.log(calculateAreaShort(10, 5));
