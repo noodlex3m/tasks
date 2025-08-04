@@ -1,4 +1,4 @@
-/** 
+/**
  * Практичне завдання: Клас для опису автомобіля
  * Твоє завдання – створити клас Car, який буде шаблоном для створення об'єктів-автомобілів.
  * Інструкції:
@@ -19,5 +19,28 @@
  *  Виклич для car1 метод startEngine().
  *  Виведи в консоль car1 ще раз, щоб побачити, що властивість isEngineOn змінилась.
  *  Виклич для car2 метод startEngine(), а потім stopEngine().
-*/
+ */
 
+class Car {
+	constructor(brand, model, year) {
+		this.brand = brand;
+		this.model = model;
+		this.year = year;
+		this.isEngineOn = false;
+	}
+	startEngine() {
+		this.isEngineOn = true;
+		console.log(`Двигун на ${this.brand} ${this.model} запущено.`);
+	}
+	stopEngine() {
+		this.isEngineOn = false;
+		console.log(`Двигун на ${this.brand} ${this.model} зупинено.`);
+	}
+}
+const car1 = new Car("Toyota", "Camry", 2021);
+const car2 = new Car("Honda", "Civic", 2022);
+console.log(car1);
+car1.startEngine();
+console.log(car1);
+car2.startEngine();
+car2.stopEngine();
