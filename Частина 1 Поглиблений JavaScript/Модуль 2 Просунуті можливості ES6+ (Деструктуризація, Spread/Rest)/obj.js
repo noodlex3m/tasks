@@ -21,3 +21,18 @@
  *  Всередині вона має знайти і повернути (return) найбільше з переданих чисел. (Можна використати Math.max(...numbers) – це найпростіший спосіб, тут spread використовується для передачі елементів масиву як окремих аргументів у Math.max).
  *  Виклич функцію кілька разів з різною кількістю аргументів і виведи результати. Наприклад: findMaxValue(1, 5, 2) має повернути 5. findMaxValue(10, 2, 8, 4) має повернути 10.
  */
+const person = { firstName: "Тетяна", lastName: "Шевченко", age: 28 };
+function printPersonInfo({ firstName, age }) {
+	console.log(`Ім'я: ${firstName}, Вік: ${age}`);
+}
+printPersonInfo(person);
+
+const baseSkills = ["HTML", "CSS"];
+const extendedSkills = ["Git", ...baseSkills, "JavaScript"];
+console.log(extendedSkills);
+
+function findMaxValue(...numbers) {
+	return Math.max(...numbers);
+}
+
+console.log(findMaxValue(1, 5, 2), findMaxValue(10, 2, 8, 4));
